@@ -153,11 +153,10 @@
                           GenerateInvoiceFooter(tot);
                           invoice_found = 1;
                       }
-
-                      if(invoice_found = 0)
-                      {
-                          printf("Sorry, the invoice for %s does not exist\n", search_name);
-                      }
+                  }
+                  if(strcmp(search_name, CSI.customer_name))
+                  {
+                      printf("\nSorry, the invoice for %s does not exist\n", search_name);
                   }
                   fclose(ptr);
               }
